@@ -1,0 +1,38 @@
+.classname {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,1), #020202);
+  color: #000000;
+}
+
+#crazy {
+  color: black;
+  background-color: rebeccapurple;
+}
+#crazier {
+  background-color: rgb(0,0,0);
+  color: rgba(0,0,0,1);
+}
+#insane {
+  background-color: hsl(0,0%,0%);
+  color: hsla(0,0%,0%,1);
+}
+#remarkable {
+  background-color: #010101;
+  color: #FFF;
+}
+
+.glyphicon {
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.weird-behavior {
+  behavior: url(#default#VML);
+}
+
+.classnameWithoutColorName .widget.button-widget {
+    margin: auto 2px;
+    border-color: #b1afb0;
+}
+.grey .widget.button-widget a:link,
+.grey .widget.button-widget a:hover{
+    color: #b1afb0;
+}

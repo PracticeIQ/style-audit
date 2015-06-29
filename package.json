@@ -1,0 +1,33 @@
+{
+  "name": "style-audit",
+  "version": "1.0.0",
+  "description": "A variety of audits for css with a report dashboard ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PracticeIQ/style-audit.git"
+  },
+  "keywords": [
+    "audit",
+    "css",
+    "dashboard"
+  ],
+  "author": "Tamara Chahine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PracticeIQ/style-audit/issues"
+  },
+  "homepage": "https://github.com/PracticeIQ/style-audit",
+  "devDependencies": {
+    "colorguard": "^0.3.0",
+    "express": "^4.13.0",
+    "jade": "^1.11.0"
+  }
+}

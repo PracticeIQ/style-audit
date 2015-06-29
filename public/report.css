@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border: 1px rgba(0,0,0,0.3) solid;
+}
+
+.count {
+  font-size: 12px;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+h1 {
+
+}
+
+h2 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  display: inline;
+  margin-left: 16px;
+  font-weight: normal;
+}
