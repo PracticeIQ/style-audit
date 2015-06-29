@@ -3,8 +3,15 @@ html
     title Report dashboard
     link(rel="stylesheet", href="report.css")
   body
+    br
+    br
     h1 Report for 
-      span= fileName
+      span= fileName 
+    h3 Most used colours
+    div.clear
+      each count, color in stats.counts
+        .block-auto(style="background-color:#{color};")= color + " : " +count
+    hr
     h3 Colours that are too close to each other
     hr
     ul
@@ -17,11 +24,8 @@ html
               each line in color.lines
                 li
                   p
-                    span(style="color:#{line.declaration.value}; font-weight:bold;")= line.declaration.value + " in "
+                    .block-small(style="background-color:#{line.match};")
+                    span(style="font-weight:bold;")= line.match + " in "
                     span= line.declaration.position.start.line+":"+line.declaration.position.start.column + " - " + line.declaration.position.end.line + ":" + line.declaration.position.end.column
-                    
-    hr  
-    h3 Most used colours
 
-    each count, color in stats.counts
-      .block(style="background-color:#{color};")=count
+                    

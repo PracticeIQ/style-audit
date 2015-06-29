@@ -19,7 +19,7 @@ var color = (function() {
       var fileName = this.fileName;
       var css = fs.readFileSync(this.fileName, "utf8");
       var output = colorguard.inspect(css, {
-        threshold: 3
+        threshold: 10
       });
       return output;
     }

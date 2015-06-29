@@ -5,8 +5,10 @@ body {
   margin: 0 auto;
 }
 
-.block {
-  width: 30px;
+.block,
+.block-small {
+  min-width: 30px;
+  width: auto;
   height: 30px;
   display: inline-block;
   color: #fff;
@@ -14,7 +16,26 @@ body {
   text-align: center;
   border: 1px rgba(0,0,0,0.3) solid;
 }
+.block-small {
+  min-width: 15px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin-right: 8px;
+}
 
+.block-auto {
+  padding: 4px;
+  display: block;
+  clear: both;
+  float: left;
+}
+
+.clear {
+  width: 100%;
+  display: block;
+  float: left;
+}
 .count {
   font-size: 12px;
 }
